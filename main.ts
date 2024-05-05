@@ -1,5 +1,5 @@
 import readFile from "./ReadFile";
-import findLargestSum from "./findLargestSum";
+import findLargestSum from "./FindLargestSum";
 
 const traversalArray: number[][] = [];
 readFile(traversalArray, "triangle.txt");
