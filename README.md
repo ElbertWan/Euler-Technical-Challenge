@@ -1,7 +1,9 @@
 # Euler-Technical-Challenge
 
 Technical Challenge for Euler (Maximum Path Sum II)
-- link is [here](https://projecteuler.net/problem=18) 
+
+- link is [here](https://projecteuler.net/problem=18)
+
 ---
 
 ## Running the project
@@ -19,10 +21,11 @@ Technical Challenge for Euler (Maximum Path Sum II)
 ## Project Layout
 
 Project is laid out as follows:
+
 - main.ts
 - FindLargestSum
-    - index.test.ts
-    - index.ts
+  - index.test.ts
+  - index.ts
 - ReadFile
-    - index.test.ts
-    - index.ts
+  - index.test.ts
+  - index.ts

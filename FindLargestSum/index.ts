@@ -1,17 +1,19 @@
 //find largest sum from bottom of triangle using traversal array
-const findLargestSum = (traversalArray: number[][]) => {
-    if (traversalArray.length === 1){
-        return;
-    }
+const findLargestSum = (triangularArray: number[][]) => {
+  if (triangularArray.length === 1) {
+    return;
+  }
 
-  for (let row = traversalArray.length - 1; row > 0; row--) {
-    for (let column = 0; column < traversalArray[row].length - 1; column++) {
+  for (let row = triangularArray.length - 1; row > 0; row--) {
+    for (let column = 0; column < triangularArray[row].length - 1; column++) {
+      //find the highest number between the pair
       const maxNumber = Math.max(
-        traversalArray[row][column],
-        traversalArray[row][column + 1],
+        triangularArray[row][column],
+        triangularArray[row][column + 1],
       );
-      const newSum = traversalArray[row - 1][column] + maxNumber;
-      traversalArray[row - 1][column] = newSum;
+      //update the row above with a cumulative sum
+      const newSum = triangularArray[row - 1][column] + maxNumber;
+      triangularArray[row - 1][column] = newSum;
     }
   }
 };
