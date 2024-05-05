@@ -1,9 +1,5 @@
 //find largest sum from bottom of triangle using traversal array
-const findLargestSum = (triangularArray: number[][]) => {
-  if (triangularArray.length === 1) {
-    return;
-  }
-
+const findLargestSum = (triangularArray: number[][]): number => {
   for (let row = triangularArray.length - 1; row > 0; row--) {
     for (let column = 0; column < triangularArray[row].length - 1; column++) {
       //find the highest number between the pair
@@ -16,6 +12,8 @@ const findLargestSum = (triangularArray: number[][]) => {
       triangularArray[row - 1][column] = newSum;
     }
   }
+
+  return triangularArray[0][0];
 };
 
 export default findLargestSum;

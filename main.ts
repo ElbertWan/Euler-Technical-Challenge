@@ -3,6 +3,6 @@ import findLargestSum from "./FindLargestSum";
 
 const triangularArray: number[][] = [];
 readFile(triangularArray, "triangle.txt");
-findLargestSum(triangularArray);
+const largestSum = findLargestSum(triangularArray);
 
-console.log("Largest sum in the triangle is:", triangularArray[0][0]);
+console.log("Largest sum in the triangle is:", largestSum);
