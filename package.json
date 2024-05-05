@@ -4,12 +4,20 @@
   "description": "",
   "main": "main.ts",
   "dependencies": {
+    "@babel/preset-env": "^7.24.5",
+    "babel-jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
     "undici-types": "^5.26.5"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "prettier": "3.2.5"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx ts-node main.ts"
+    "test": "jest",
+    "start": "npx ts-node main.ts",
+    "lint": "npx prettier . --write"
   },
   "keywords": [],
   "author": "",
